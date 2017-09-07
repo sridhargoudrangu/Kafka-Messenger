@@ -74,7 +74,7 @@ Returns list of all topics.
 ```
 
 #### topicInfo(String topic)
-Returns information aobut a topic, including number of partitions and leader
+Returns information about a topic, including number of partitions and leader
 ```sh
  {"name":"topic1","configs":{},"partitions":[{"partition":0,"leader":0,"replicas":[{"broker":0,"leader":true,"in_sync":true}]}]}
 ```
