@@ -79,14 +79,15 @@ Returns information aobut a topic, including number of partitions and leader
  {"name":"topic1","configs":{},"partitions":[{"partition":0,"leader":0,"replicas":[{"broker":0,"leader":true,"in_sync":true}]}]}
 ```
 
-### Messenger Consumer Group
-Create consumer group (multiple threads of Confluent consumer clients)
-
 #### parititionInfo(String topic)
 Returns information about a topic's partitions
 ```sh
 [{"partition":0,"leader":0,"replicas":[{"broker":0,"leader":true,"in_sync":true}]}]
 ```
+
+### Messenger Consumer Group
+#### run()
+Creates consumer group (multiple threads of Confluent consumer clients)
 
 ## Development setup
 
