@@ -53,3 +53,37 @@ schema-registry is [UP]
 ```
 
 If all services are "UP", the Commvault Kafka Messenger may be run.
+
+## Using Commvault Kafka Messenger
+### Messenger Producer:
+#### partitionCalculator(String fileName)
+Returns the number of parititons based on the size of JSON file.
+
+#### produce(String topic)
+Produces data to the Kafka server, prints information regarding data, status, and response.
+```sh
+Object: {"city":"Boston","name":"Bob","job":"Doctor"}
+Status: HTTP/1.1 200 OK
+Response: {"offsets":[{"partition":0,"offset":23,"error_code":null,"error":null}],"key_schema_id":null,"value_schema_id":null}
+```
+
+#### listOfTopics()
+Returns list of all topics.
+```sh
+ ["__consumer_offsets","_schemas","topic1","topic2","topic3"]
+```
+
+#### topicInfo(String topic)
+Returns information aobut a topic, including number of partitions and leader
+```sh
+ {"name":"topic1","configs":{},"partitions":[{"partition":0,"leader":0,"replicas":[{"broker":0,"leader":true,"in_sync":true}]}]}
+```
+
+### Messenger Consumer Group
+Create consumer group (multiple threads of Confluent consumer clients)
+
+#### parititionInfo(String topic)
+Returns information about a topic's partitions
+```sh
+[{"partition":0,"leader":0,"replicas":[{"broker":0,"leader":true,"in_sync":true}]}]
+```
