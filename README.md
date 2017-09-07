@@ -87,3 +87,15 @@ Returns information about a topic's partitions
 ```sh
 [{"partition":0,"leader":0,"replicas":[{"broker":0,"leader":true,"in_sync":true}]}]
 ```
+## Development setup
+
+The Commvault Kafka Messenger uses [Maven](https://maven.apache.org/) for dependency management. See *pom.xml* for dependencies.
+
+## Release History
+
+* 1.0.0 (08/2017)
+    * Initial Launch
+
+## License
+
+**Commvault Kafka Messenger** and its contents are licensed under the [Commvault License](https://raw.githubusercontent.com/CommvaultEngg/cvpysdk/master/LICENSE.txt).
