@@ -99,3 +99,15 @@ The Commvault Kafka Messenger uses [Maven](https://maven.apache.org/) for depend
 ## License
 
 **Commvault Kafka Messenger** and its contents are licensed under the [Commvault License](https://raw.githubusercontent.com/CommvaultEngg/cvpysdk/master/LICENSE.txt).
+
+## Commvault 
+<p align="center">
+    <img src="https://upload.wikimedia.org/wikipedia/en/thumb/1/12/Commvault_logo.png/150px-Commvault_logo.png" alt="Commvault logo" title="Commvault"  />
+</p>
+
+[Commvault](https://www.commvault.com) (NASDAQ: CVLT) is a publicly traded data protection and information management software company headquartered in Tinton Falls, New Jersey.
+
+It was formed in 1988 as a development group in Bell Labs, and later became a business unit of AT&T Network Systems. It was incorporated in 1996.
+
+Commvault software assists organizations with data backup and recovery, cloud and infrastructure management, and retention and compliance.
+
