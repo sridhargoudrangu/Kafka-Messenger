@@ -1,5 +1,5 @@
 # Commvault Kafka Messenger
-The Commvault Kafka Messenger is a data backup and data streaming tool in Java which allows users to quickly post structured data to the Commvault Web Analytics Engine, a package software package that performs metadata indexing, content indexing, and other data collection operations for a variety of Commvault products and features.
+The Commvault Kafka Messenger is a data backup and data streaming tool in Java which allows users to quickly post JSON structured data to the Commvault Web Analytics Engine, a package software package that performs metadata indexing, content indexing, and other data collection operations for a variety of Commvault products and features.
 
 The Commvault Kafka Messenger utilizes Confluent Platform, a plaform which provides the organization, transport, and tools necessary to coordinate between multiple data sources, applications, and sinks. The Commvault Kafka Messenger utilizes the Confluent Platform's Kafka REST Proxy, which offers a RESTful interface for Kafka clusters, to abstract the native Kafka Producer client, making it easy to public, process, and safely store data streams within partitioned Kafka clusters.
 
@@ -87,6 +87,7 @@ Returns information about a topic's partitions
 ```sh
 [{"partition":0,"leader":0,"replicas":[{"broker":0,"leader":true,"in_sync":true}]}]
 ```
+
 ## Development setup
 
 The Commvault Kafka Messenger uses [Maven](https://maven.apache.org/) for dependency management. See *pom.xml* for dependencies.
@@ -110,4 +111,3 @@ The Commvault Kafka Messenger uses [Maven](https://maven.apache.org/) for depend
 It was formed in 1988 as a development group in Bell Labs, and later became a business unit of AT&T Network Systems. It was incorporated in 1996.
 
 Commvault software assists organizations with data backup and recovery, cloud and infrastructure management, and retention and compliance.
-
